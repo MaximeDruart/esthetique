@@ -131,7 +131,19 @@ body {
           width: 64vw;
           margin: 10px;
           background-color: black;
-          border-radius: 10px; }
+          border-radius: 10px;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: space-around; }
+          .slider .slider-wrapper .slider-container .slider-item .img-container {
+            height: 40%;
+            width: 80%;
+            background-color: red; }
+          .slider .slider-wrapper .slider-container .slider-item .text-container {
+            color: white; }
+            .slider .slider-wrapper .slider-container .slider-item .text-container .headline {
+              font-size: 200%; }
 
   .desc {
     margin-top: 2vh;

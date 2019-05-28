@@ -183,6 +183,33 @@ body {
           margin:10px;
           background-color:black;
           border-radius: 10px;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: space-around;
+
+          .img-container{
+            height:40%;
+            width:80%;
+            background-color: red;
+          }
+
+          .text-container{
+
+            color:white;
+
+            .headline{
+              font-size:200%;
+            }
+
+            .price{
+
+            }
+
+            .duration{
+
+            }
+          }
         }
       }
     }
