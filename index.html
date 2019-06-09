@@ -3,99 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Title</title>
-    <meta name="viewport" content="width=device-width">
     <meta name="description" content="description de la page">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="sandwich-overlay">
-      <div class="close"></div>
-      <ul class="overlay-list">
-        <li class="list-item">ACCUEIL</li>
-        <li class="list-item">AGENDA</li>
-        <li class="list-item">CONNEXION</li>
-        <li class="list-item">AIDE</li>
-        <li class="list-item">CONTACT</li>
-      </ul>
-    </div>
     <header class="header">
-      <!-- <div class="menu">
-        <div class="hamburger" id="hamburger-1">
-          <span class="lineHam"></span>
-          <span class="lineHam"></span>
-          <span class="lineHam"></span>
-        </div>
-      </div> -->
-      <div class="headline">
-        <p class="title">Showroom</p>
-        <p class="subtitle">Relooking.Ms</p>
-      </div>
+      <h2><a class="link-no-deco" href="index.html">Showroom Relooking.Ms</a></h2>
     </header>
-    <div class="services">
-      <span>SERVICES</span>
-    </div>
-    <div class="main">
-      <div class="slider">
-        <ul class="servicesNames">
-          <li>Corps</li>
-          <li>Cheveux</li>
-          <li>Ongles</li>
-          <li>Manucures</li>
-          <li></li>
+
+    <main>
+      <nav>
+        <h1>Services bien-être et esthétique</h1>
+        <ul>
+          <li><a class="link-no-deco" href="#">Corps</a></li>
+          <li><a class="link-no-deco" href="#">Cheveux</a></li>
+          <li><a class="link-no-deco" href="#">Ongles</a></li>
+          <li><a class="link-no-deco" href="#">Manucure</a></li>
         </ul>
-        <div class="slider-wrapper">
-          <div class="arrow-wrapper">
-            <div class="left"><</div>
-            <div class="right">></div>
-          </div>
-          <div class="slider-container">
-            <div class="slider-item">
-              <div class="img-container"></div>
-              <div class="text-container">
-                <p class="headline">Soin</p>
-                <div class="info"><p class="price">Prix :</p><p class="duration">Durée :</p></div>
-              </div>
+      </nav>
+      <section id="services-container">
+        <figure class="service">
+          <img src="images/sampleservice.jpg" alt="Service">
+          <figcaption>
+            <h2>Nom du soin</h2>
+            <p>Déscription du soin</p>
+            <div class="service-infos">
+              <h3>75€</h3>
+              <h3>1h30</h3>
             </div>
-            <div class="slider-item">
-              <a class="help" href="#"></a>
-              <div class="img-container"></div>
-              <div class="text-container">
-                <p class="headline">Soin</p>
-                <div class="info"><p class="price">Prix :</p><p class="duration">Durée :</p></div>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="img-container"></div>
-              <div class="text-container">
-                <p class="headline">Soin</p>
-                <div class="info"><p class="price">Prix :</p><p class="duration">Durée :</p></div>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="img-container"></div>
-              <div class="text-container">
-                <p class="headline">Soin</p>
-                <div class="info"><p class="price">Prix :</p><p class="duration">Durée :</p></div>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="img-container"></div>
-              <div class="text-container">
-                <p class="headline">Soin</p>
-                <div class="info"><p class="price">Prix :</p><p class="duration">Durée :</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="desc">
-        <h1 class="head">DESCRIPTION</h1>
-        <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-        <div class="AboutButton">EN SAVOIR +</div>
-      </div>
-    </div>
+            <a class="reservation-btn" href="#">Réserver</a>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
     <!-- jquery, tweenmax,  timelinemax  -->
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
