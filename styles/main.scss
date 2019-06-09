@@ -16,13 +16,25 @@
 
 $color-pink: #ffc0cb;
 $color-background: #ffffff;
-$color-title: #0f0f0f;
+$color-text: #262626;
 $color-service:#ffc0cb;
+$color-btn:#ffc0cb;
+$color-btn-light:#ffffff;
 
 .link-no-deco{
   text-decoration: none;
-  color:$color-title;
+  color:$color-text;
 }
+.btn-light{
+  display: block;
+  color:$color-text;
+  background-color:$color-btn-light;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+}
+
 
 // Mobile stylesheet
 @media (max-width: 480px) {
@@ -35,7 +47,7 @@ $color-service:#ffc0cb;
       text-align: center;
       a{
         text-decoration: none;
-        color:$color-title;
+        color:$color-text;
       }
     }
   } // Header
@@ -60,24 +72,29 @@ $color-service:#ffc0cb;
     }
   } // Nav
   #services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .service{
       background-color:$color-service;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items:center;
-      width: 300px;
+      width: 350px;
       padding:10px;
       border-radius: 15px;
       figcaption{
         padding: 10px;
-        width: 250px;
+        width: 300px;
         h2{
           padding:15px 0;
         }
         .service-infos{
           display: flex;
           justify-content: space-between;
+          margin-bottom: 15px;
+          margin-top: 25px;
         }
       }
     }
