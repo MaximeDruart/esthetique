@@ -21,6 +21,7 @@ $color-service:#ffc0cb;
 $color-btn:#ffc0cb;
 $color-btn-light:#ffffff;
 
+$border-radius:15px;
 .link-no-deco{
   text-decoration: none;
   color:$color-text;
@@ -29,7 +30,7 @@ $color-btn-light:#ffffff;
   display: block;
   color:$color-text;
   background-color:$color-btn-light;
-  border-radius: 15px;
+  border-radius: $border-radius;
   text-decoration: none;
   padding: 10px 20px;
   text-align: center;
@@ -59,16 +60,19 @@ $color-btn-light:#ffffff;
     align-items: center;
     h1{
       text-transform: uppercase;
-      margin-bottom: 30px
+      border: solid 1px $color-text;
+      border-radius: $border-radius;
+      padding: 5px 20px;
+      margin-bottom: 10px
     }
     ul{
       list-style: none;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       li{
-        padding:0 10px;
+        padding: 10px 0;
       }
-      li:first-child{
-        padding-left:0px;      }
     }
   } // Nav
   #services-container{
@@ -83,7 +87,7 @@ $color-btn-light:#ffffff;
       align-items:center;
       width: 350px;
       padding:10px;
-      border-radius: 15px;
+      border-radius: $border-radius;
       figcaption{
         padding: 10px;
         width: 300px;
