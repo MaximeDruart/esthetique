@@ -20,6 +20,7 @@ $color-text: #262626;
 $color-service:#ffc0cb;
 $color-btn:#ffc0cb;
 $color-btn-light:#ffffff;
+$color-footer-grey:#f4f4f4;
 
 $border-radius:15px;
 .link-no-deco{
@@ -106,7 +107,7 @@ $border-radius:15px;
   footer{
     width:100%;
     height:20vh;
-    background-color:lightgrey;
+    background-color:$color-footer-grey;
     .about{
       display: flex;
       flex-flow:row nowrap;

@@ -82,7 +82,7 @@
   footer {
     width: 100%;
     height: 20vh;
-    background-color: lightgrey; }
+    background-color: #f4f4f4; }
     footer .about {
       display: flex;
       flex-flow: row nowrap;
