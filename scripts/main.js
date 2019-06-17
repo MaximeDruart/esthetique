@@ -17,3 +17,6 @@ let navDropdown = document.querySelector('#navDropdown')
 navTrigger.addEventListener('click', () => {
   navDropdown.classList.toggle("dropdown_active")
 })
+navDropdown.addEventListener('click', () => {
+  navDropdown.classList.toggle("dropdown_active")
+})

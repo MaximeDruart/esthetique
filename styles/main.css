@@ -66,7 +66,7 @@
     flex-wrap: wrap;
     justify-content: center; }
     #services-container .service {
-      background-color: #ffc0cb;
+      background-color: #f4f4f4;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -90,7 +90,7 @@
   footer {
     padding: 0 20px;
     width: 100%;
-    background-color: lightgrey; }
+    background-color: #f4f4f4; }
     footer .about {
       display: flex;
       flex-flow: column; } }
