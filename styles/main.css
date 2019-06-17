@@ -93,30 +93,45 @@
         #services-container .service figcaption .fig-text {
           height: 50%; }
           #services-container .service figcaption .fig-text h2 {
-            font-size: 10px; }
+            font-size: 20px; }
+          #services-container .service figcaption .fig-text p {
+            font-size: 13px; }
         #services-container .service figcaption .service-infos {
+          margin: 0 auto;
+          width: 60%;
           height: 30%;
           display: flex;
           flex-flow: row nowrap;
-          justify-content: space-between; }
+          justify-content: space-between;
+          align-items: center; }
           #services-container .service figcaption .service-infos .duration {
+            height: 60%;
             display: flex;
-            flex-flow: row;
-            justify-content: space-between; }
+            flex-flow: column;
+            justify-content: space-around; }
+            #services-container .service figcaption .service-infos .duration .head {
+              font-weight: bolder; }
           #services-container .service figcaption .service-infos .line {
-            height: 100%;
+            height: 80%;
             width: 1px;
             background-color: grey; }
           #services-container .service figcaption .service-infos .price {
+            height: 60%;
             display: flex;
-            flex-flow: row;
-            justify-content: space-between; }
+            flex-flow: column;
+            justify-content: space-around; }
+            #services-container .service figcaption .service-infos .price .head {
+              font-weight: bolder; }
         #services-container .service figcaption .reserver {
-          height: 20%; }
+          height: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
           #services-container .service figcaption .reserver .btn-light {
             width: 70%;
             margin: 0 auto;
-            border-radius: 5px; }
+            border-radius: 5px;
+            background-color: #ffc0cb; }
 
   footer {
     margin-top: 5vh;
