@@ -88,7 +88,7 @@ $border-radius:15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    filter: drop-shadow(0px 3px 16px rgba(0,0,0,0.2));
+    filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.15));
     .service{
       background-color:$color-service;
       display: flex;
