@@ -5,15 +5,9 @@ $("#services-container").load("include/corps.html");
 let buttons = document.querySelectorAll('.link-no-deco')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-<<<<<<< HEAD
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
     TweenMax.to('#services-container', {opacity:1})
-=======
-    tweenMax.set('#services-container', {opacity:0})
-    $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
-    tweenMax.to('#services-container', {opacity:1})
->>>>>>> ef868994048a8301bb5d158b59fdbba126542d7e
   })
 })
 
