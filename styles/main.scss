@@ -95,14 +95,12 @@ $border-radius:15px;
       align-items:center;
       width: 350px;
       height: 575px;
-      padding:10px;
       border-radius: $border-radius;
       overflow: hidden;
       .service-wrapper{
         height:40%;
         width:110%;
         overflow:hidden;
-        margin-top:15px;
         border-radius:10px;
         img{
           width:100%;
@@ -111,7 +109,7 @@ $border-radius:15px;
       figcaption{
         margin-top:-5%;
         height:65%; // 65+40-5 = 100%
-        border-radius: $border-radius;
+        border-radius: 20px;
         padding: 10px;
         width: 100%;
         h2{
@@ -122,6 +120,11 @@ $border-radius:15px;
           justify-content: space-between;
           margin-bottom: 15px;
           margin-top: 25px;
+        }
+        .btn-light{
+          width:70%;
+          margin:0 auto;
+          border-radius: 5px;
         }
       }
 

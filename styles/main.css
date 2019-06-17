@@ -73,21 +73,19 @@
       align-items: center;
       width: 350px;
       height: 575px;
-      padding: 10px;
       border-radius: 15px;
       overflow: hidden; }
       #services-container .service .service-wrapper {
         height: 40%;
         width: 110%;
         overflow: hidden;
-        margin-top: 15px;
         border-radius: 10px; }
         #services-container .service .service-wrapper img {
           width: 100%; }
       #services-container .service figcaption {
         margin-top: -5%;
         height: 65%;
-        border-radius: 15px;
+        border-radius: 20px;
         padding: 10px;
         width: 100%; }
         #services-container .service figcaption h2 {
@@ -97,6 +95,10 @@
           justify-content: space-between;
           margin-bottom: 15px;
           margin-top: 25px; }
+        #services-container .service figcaption .btn-light {
+          width: 70%;
+          margin: 0 auto;
+          border-radius: 5px; }
 
   footer {
     margin-top: 5vh;
