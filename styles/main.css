@@ -68,6 +68,8 @@
       width: 350px;
       padding: 10px;
       border-radius: 15px; }
+      #services-container .service img {
+        width: 85%; }
       #services-container .service figcaption {
         padding: 10px;
         width: 300px; }
