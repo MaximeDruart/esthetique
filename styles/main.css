@@ -94,5 +94,10 @@
     footer .about {
       display: flex;
       flex-flow: column; } }
+@media (min-width: 1200px) {
+  footer .about {
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=main.css.map */
