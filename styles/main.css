@@ -8,7 +8,8 @@
   font-family: nexaBold;
   src: url("../fonts/nexaBold.otf"); }
 * {
-  font-family: 'Work Sans'; }
+  font-family: 'Work Sans';
+  box-sizing: border-box; }
 
 .link-no-deco {
   text-decoration: none;
@@ -67,24 +68,28 @@
     justify-content: center; }
     #services-container .service {
       background-color: #f4f4f4;
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 350px;
+      height: 575px;
       padding: 10px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      overflow: hidden; }
       #services-container .service .service-wrapper {
-        height: 30%;
-        width: 80%;
+        height: 40%;
+        width: 110%;
         overflow: hidden;
         margin-top: 15px;
         border-radius: 10px; }
         #services-container .service .service-wrapper img {
           width: 100%; }
       #services-container .service figcaption {
+        margin-top: -5%;
+        height: 65%;
+        border-radius: 15px;
         padding: 10px;
-        width: 300px; }
+        width: 100%; }
         #services-container .service figcaption h2 {
           padding: 15px 0; }
         #services-container .service figcaption .service-infos {
@@ -96,7 +101,6 @@
   footer {
     margin-top: 5vh;
     padding: 0 20px;
-    width: 100%;
     background-color: #f4f4f4; }
     footer .about {
       display: flex;

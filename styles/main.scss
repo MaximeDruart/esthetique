@@ -12,6 +12,7 @@
 }
 * {
   font-family: 'Work Sans';
+  box-sizing: border-box;
 }
 
 $color-pink: #ffc0cb;
@@ -89,16 +90,17 @@ $border-radius:15px;
     justify-content: center;
     .service{
       background-color:$color-service;
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items:center;
       width: 350px;
+      height: 575px;
       padding:10px;
       border-radius: $border-radius;
+      overflow: hidden;
       .service-wrapper{
-        height:30%;
-        width:80%;
+        height:40%;
+        width:110%;
         overflow:hidden;
         margin-top:15px;
         border-radius:10px;
@@ -107,8 +109,11 @@ $border-radius:15px;
         }
       }
       figcaption{
+        margin-top:-5%;
+        height:65%; // 65+40-5 = 100%
+        border-radius: $border-radius;
         padding: 10px;
-        width: 300px;
+        width: 100%;
         h2{
           padding:15px 0;
         }
@@ -119,12 +124,12 @@ $border-radius:15px;
           margin-top: 25px;
         }
       }
+
     }
   }
   footer{
     margin-top: 5vh;
     padding: 0 20px;
-    width:100%;
     background-color:$color-light-grey;
     .about{
       display: flex;
