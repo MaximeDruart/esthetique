@@ -5,7 +5,9 @@ $("#services-container").load("include/corps.html");
 let buttons = document.querySelectorAll('.link-no-deco')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
+    tweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
+    tweenMax.to('#services-container', {opacity:1})
   })
 })
 
