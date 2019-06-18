@@ -1,12 +1,3 @@
-@font-face {
-  font-family: nexaLight;
-  src: url("../fonts/nexaLight.otf"); }
-@font-face {
-  font-family: nexaRegular;
-  src: url("../fonts/nexaRegular.otf"); }
-@font-face {
-  font-family: nexaBold;
-  src: url("../fonts/nexaBold.otf"); }
 * {
   font-family: 'Work Sans';
   box-sizing: border-box; }
