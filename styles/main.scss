@@ -88,7 +88,7 @@ $border-radius:15px;
           background-color: $color-btn-pink;
         }
       }
-      li ul:not(:first-child)::after{
+      li:not(:last-child)::after{
         content:"";
         position: absolute;
         left:100%;
