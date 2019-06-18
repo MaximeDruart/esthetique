@@ -88,8 +88,27 @@ $border-radius:15px;
   nav{
     margin : 60px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    .logo{
+      margin-right:50px;
+    }
+    .logo-nav{
+      text-decoration: none;
+      color:black !important;
+      text-align: center;
+      h2{
+        font-size: 1.4em;
+        font-weight: 300;
+      }
+      p{
+        color: black;
+        margin:0;
+        font-weight: 100;
+        margin-top:5px;
+      }
+    }
     h1{
       text-transform: uppercase;
       border: solid 1px $color-text;
