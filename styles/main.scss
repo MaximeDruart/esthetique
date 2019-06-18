@@ -4,12 +4,13 @@
 }
 
 $color-pink: #ffc0cb;
+$color-header:#413936;
 $color-background: #ffffff;
 $color-text: #262626;
 $color-service:#f4f4f4;
 $color-btn:#ffc0cb;
 $color-btn-light:#ffffff;
-$color-light-grey:#f4f4f4;
+$color-footer:#E6DEDB;
 $color-btn-pink:#e667a6;
 
 $border-radius:15px;
@@ -34,13 +35,13 @@ $border-radius:15px;
   header{
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.20);
     padding:10px 0px;
-    background: $color-background;
+    background: $color-header;
     h2{
       font-size: 1em;
       text-align: center;
       a{
         text-decoration: none;
-        color:$color-text;
+        color:white !important;
       }
     }
   } // Header
@@ -178,7 +179,7 @@ $border-radius:15px;
   footer{
     margin-top: 5vh;
     padding: 0 20px;
-    background-color:$color-light-grey;
+    background-color:$color-footer;
     .about{
       display: flex;
       flex-flow:column;
