@@ -115,10 +115,12 @@ $border-radius:15px;
           width: 90%;
           margin: 0 auto;
           h2{
-            font-size: 20px;  // a regler
+            font-size: 20px;
+            font-weight: 200;  // a regler
           }
           p{
-            font-size: 13px; // a regler
+            font-size: 13px;
+            font-weight: 100; // a regler
           }
         }
         .service-infos{
