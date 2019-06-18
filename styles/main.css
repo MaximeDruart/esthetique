@@ -226,7 +226,7 @@
   footer {
     margin-top: 5vh;
     padding: 20px 40px;
-    background-color: #E6DEDB;
+    background-color: #413936;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -237,12 +237,15 @@
       display: flex;
       flex-flow: column; }
       footer .about h1 {
-        font-weight: 500;
+        color: white;
+        font-weight: 400;
         margin-bottom: 15px;
         font-size: 22px; }
       footer .about p, footer .about a {
         padding: 0;
+        color: white;
         margin: 2px;
+        font-weight: 200;
         font-size: 14px;
         text-decoration: none; }
       footer .about .contact {
