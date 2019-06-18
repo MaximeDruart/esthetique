@@ -141,6 +141,14 @@
       display: flex;
       flex-flow: column; } }
 @media (min-width: 1200px) {
+  nav h1 {
+    display: none; }
+  nav ul {
+    height: 100%;
+    flex-direction: row; }
+  nav li {
+    padding: 0 15px !important; }
+
   footer .about {
     flex-flow: row;
     justify-content: space-around; } }
