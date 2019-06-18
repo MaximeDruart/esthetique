@@ -14,9 +14,12 @@ buttons.forEach((button) => {
 // Dropdown
 let navTrigger = document.querySelector('#navTrigger')
 let navDropdown = document.querySelector('#navDropdown')
+let triggerStyle = getComputedStyle(navTrigger)
 navTrigger.addEventListener('click', () => {
-  navDropdown.classList.toggle("dropdown_active")
+    navDropdown.classList.toggle("dropdown_active")
 })
 navDropdown.addEventListener('click', () => {
-  navDropdown.classList.toggle("dropdown_active")
+  if (triggerStyle.display != "none") {
+    navDropdown.classList.toggle("dropdown_active")
+  }
 })
