@@ -10,7 +10,7 @@ $color-text: #262626;
 $color-service:#ffffff;
 $color-btn:#ffc0cb;
 $color-btn-light:#ffffff;
-$color-footer:#E6DEDB;
+$color-footer:#413936;
 $color-btn-pink:#e667a6;
 
 $border-radius:15px;
@@ -280,13 +280,16 @@ $border-radius:15px;
       flex-flow:column;
 
       h1{
-        font-weight: 500;
+        color:white;
+        font-weight: 400;
         margin-bottom: 15px;
         font-size: 22px;
       }
       p, a{
         padding: 0;
+        color:white;
         margin: 2px;
+        font-weight: 200;
         font-size: 14px;
         text-decoration: none;
       }
