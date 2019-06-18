@@ -88,9 +88,7 @@ $border-radius:15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.15));
     .service{
-      background-color:$color-service;
       display: flex;
       flex-direction: column;
       align-items:center;
@@ -98,6 +96,8 @@ $border-radius:15px;
       height: 575px;
       border-radius: $border-radius;
       overflow: hidden;
+      filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.15));
+      background-color:$color-service;
       .service-wrapper{
         height:40%;
         width:110%;
@@ -112,21 +112,25 @@ $border-radius:15px;
         margin-top:-5%;
         height:65%; // 65+40-5 = 100%
         border-radius: 20px;
-        padding: 10px;
+        padding: 20px;
         width: 100%;
+        overflow: hidden;
+
         .fig-text{
           height :50%;
+          width: 90%;
+          margin: 0 auto;
           h2{
-            font-size: 20px;
+            font-size: 20px;  // a regler
           }
           p{
-            font-size: 13px;
+            font-size: 13px; // a regler
           }
         }
         .service-infos{
           margin: 0 auto;
           width: 60%;
-          height:30%;
+          height:20%;
           display: flex;
           flex-flow: row nowrap;
           justify-content: space-between;
@@ -140,13 +144,14 @@ $border-radius:15px;
 
             .head{
               font-weight: bolder;
+              font-size:20px;
             }
           }
 
           .line{
             height:80%;
             width:1px;
-            background-color:grey;
+            background-color:lightgrey;
           }
 
           .price{
@@ -157,20 +162,23 @@ $border-radius:15px;
 
             .head{
               font-weight: bolder;
+              font-size:20px;
             }
           }
         }
         .reserver{
-          height:20%;
+          height:30%;
           display: flex;
           justify-content: center;
           align-items: center;
 
           .btn-light{
-            width:70%;
+            text-transform: uppercase;
+            color: white;
+            width:35%;
             margin:0 auto;
             border-radius: 5px;
-            background-color: $color-pink;
+            background-color: #e667a6;
           }
         }
       }
