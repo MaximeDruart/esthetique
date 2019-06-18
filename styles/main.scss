@@ -226,8 +226,11 @@ $border-radius:15px;
     margin-top: 5vh;
     padding: 10px 20px;
     background-color:$color-footer;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     .about{
-      padding-top: 50px;
       padding: 10px 20px;
       display: flex;
       flex-flow:column;
