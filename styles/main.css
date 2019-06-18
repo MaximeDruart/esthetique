@@ -176,11 +176,9 @@
     height: 20vh;
     margin-top: 5vh;
     padding: 10px 20px;
-    background-color: #E6DEDB;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background-color: #E6DEDB; }
     footer .about {
+      padding-top: 50px;
       padding: 10px 20px;
       display: flex;
       flex-flow: column; }
