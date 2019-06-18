@@ -130,26 +130,30 @@
           justify-content: space-between;
           align-items: center; }
           #services-container .service figcaption .service-infos .duration {
-            font-weight: 200;
             height: 60%;
+            width: 45%;
             display: flex;
             flex-flow: column;
-            justify-content: space-around; }
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 200; }
             #services-container .service figcaption .service-infos .duration .head {
               font-weight: 400;
               font-size: 20px;
               text-transform: uppercase;
               margin-bottom: 4px; }
           #services-container .service figcaption .service-infos .line {
-            height: 80%;
+            height: 55%;
             width: 1px;
             background-color: lightgrey; }
           #services-container .service figcaption .service-infos .price {
-            font-weight: 200;
             height: 60%;
+            width: 45%;
             display: flex;
             flex-flow: column;
-            justify-content: space-around; }
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 200; }
             #services-container .service figcaption .service-infos .price .head {
               font-weight: 400;
               font-size: 20px;

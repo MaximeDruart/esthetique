@@ -163,11 +163,13 @@ $border-radius:15px;
           align-items: center;
 
           .duration{
-            font-weight: 200;
             height:60%;
+            width: 45%;
             display: flex;
             flex-flow:column;
             justify-content: space-around;
+            align-items: center;
+            font-weight: 200;
 
             .head{
               font-weight: 400;
@@ -178,17 +180,19 @@ $border-radius:15px;
           }
 
           .line{
-            height:80%;
+            height:55%;
             width:1px;
             background-color:lightgrey;
           }
 
           .price{
-            font-weight: 200;
             height:60%;
+            width: 45%;
             display: flex;
             flex-flow:column;
             justify-content: space-around;
+            align-items: center;
+            font-weight: 200;
 
             .head{
               font-weight: 400;
