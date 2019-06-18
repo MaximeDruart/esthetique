@@ -176,7 +176,10 @@
     height: 20vh;
     margin-top: 5vh;
     padding: 10px 20px;
-    background-color: #E6DEDB; }
+    background-color: #E6DEDB;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     footer .about {
       padding: 10px 20px;
       display: flex;
@@ -191,7 +194,7 @@
         font-size: 14px; }
       footer .about .contact {
         display: flex;
-        flex-flow: row; } }
+        flex-flow: column; } }
 @media (min-width: 1200px) {
   nav h1 {
     display: none; }

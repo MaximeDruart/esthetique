@@ -226,6 +226,9 @@ $border-radius:15px;
     margin-top: 5vh;
     padding: 10px 20px;
     background-color:$color-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .about{
       padding: 10px 20px;
       display: flex;
@@ -243,7 +246,7 @@ $border-radius:15px;
       }
       .contact{
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
       }
     }
   }
