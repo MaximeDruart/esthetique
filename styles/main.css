@@ -90,9 +90,11 @@
           width: 90%;
           margin: 0 auto; }
           #services-container .service figcaption .fig-text h2 {
-            font-size: 20px; }
+            font-size: 20px;
+            font-weight: 200; }
           #services-container .service figcaption .fig-text p {
-            font-size: 13px; }
+            font-size: 13px;
+            font-weight: 100; }
         #services-container .service figcaption .service-infos {
           margin: 0 auto;
           width: 60%;
