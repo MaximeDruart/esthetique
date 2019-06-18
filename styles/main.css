@@ -36,32 +36,14 @@
         margin: 0;
         font-weight: 100;
         margin-top: 5px; }
-    header #hamburger-1.is-active .lineHam:nth-child(2) {
-      opacity: 0; }
-    header #hamburger-1.is-active .lineHam:nth-child(1) {
-      transform: translateY(6px) rotate(45deg); }
-    header #hamburger-1.is-active .lineHam:nth-child(3) {
-      transform: translateY(-6px) rotate(-45deg); }
-    header .hamburger {
-      position: absolute;
-      right: 7%;
-      top: 50%;
-      transform: translateY(-50%); }
-      header .hamburger .lineHam {
-        width: 40px;
-        height: 3px;
-        background-color: white;
-        border-radius: 12px;
-        display: block;
-        margin: 4px auto;
-        transition: all 0.3s ease-in-out; }
 
   nav {
-    margin: 60px 0px;
+    width: 80%;
+    margin: 40px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    justify-content: space-between; }
     nav .logo {
       margin-right: 50px; }
     nav .logo-nav {
@@ -111,6 +93,20 @@
     nav ul.dropdown_active {
       height: 450px;
       transition: all 0.3s linear; }
+    nav #hamburger-1.is-active .lineHam:nth-child(2) {
+      opacity: 0; }
+    nav #hamburger-1.is-active .lineHam:nth-child(1) {
+      transform: translateY(6px) rotate(45deg); }
+    nav #hamburger-1.is-active .lineHam:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg); }
+    nav .hamburger .lineHam {
+      width: 40px;
+      height: 3px;
+      background-color: black;
+      border-radius: 12px;
+      display: block;
+      margin: 4px auto;
+      transition: all 0.3s ease-in-out; }
 
   #services-container {
     display: flex;
@@ -234,26 +230,28 @@
       footer .about .contact, footer .about .horaires, footer .about .adresse {
         margin-bottom: 15px; } }
 @media (min-width: 1200px) {
-  header .hamburger {
-    display: none; }
-
-  nav h1 {
-    display: none; }
-  nav ul {
-    height: 100%;
-    flex-direction: row;
-    overflow: visible; }
-  nav li {
-    padding: 0 15px !important; }
-  nav li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 100%;
-    background-color: lightgrey; }
+  nav {
+    width: 100%;
+    justify-content: center; }
+    nav .hamburger {
+      display: none; }
+    nav h1 {
+      display: none; }
+    nav ul {
+      height: 100%;
+      flex-direction: row;
+      overflow: visible; }
+    nav li {
+      padding: 0 15px !important; }
+    nav li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 100%;
+      background-color: lightgrey; }
 
   #services-container {
     width: 80%;
