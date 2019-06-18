@@ -6,7 +6,7 @@ window.onload = function(){
 }
 
 // Filter services
-let buttons = document.querySelectorAll('.link-no-deco')
+let buttons = document.querySelectorAll('li a.link-no-deco')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     buttons.forEach(button =>{
@@ -16,7 +16,7 @@ buttons.forEach((button) => {
 
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
-    TweenMax.to('#services-container', 0.4, {opacity:1})
+    TweenMax.to('#services-container', 0.6, {opacity:1})
   })
 })
 

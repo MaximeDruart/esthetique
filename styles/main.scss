@@ -88,10 +88,10 @@ $border-radius:15px;
           background-color: $color-btn-pink;
         }
       }
-      li::after{
+      li ul:not(:first-child)::after{
         content:"";
         position: absolute;
-        right:100%;
+        left:100%;
         top:50%;
         transform: translateY(-50%);
         width:1px;
