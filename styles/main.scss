@@ -118,6 +118,7 @@ $border-radius:15px;
       overflow: hidden;
       filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.3));
       background-color:$color-service;
+      margin-bottom: 50px;
       .service-wrapper{
         height:50%;
         width:140%;
@@ -199,7 +200,7 @@ $border-radius:15px;
         }
 
         .reserver{
-          height:20%;
+          height:16%;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -245,6 +246,7 @@ $border-radius:15px;
   #services-container{
     width: 80%;
     margin:0 auto;
+    justify-content: flex-start;
   }
   footer{
     .about{

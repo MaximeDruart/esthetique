@@ -91,7 +91,8 @@
       border-radius: 15px;
       overflow: hidden;
       filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.3));
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      margin-bottom: 50px; }
       #services-container .service .service-wrapper {
         height: 50%;
         width: 140%;
@@ -155,7 +156,7 @@
               text-transform: uppercase;
               margin-bottom: 4px; }
         #services-container .service figcaption .reserver {
-          height: 20%;
+          height: 16%;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -186,7 +187,8 @@
 
   #services-container {
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    justify-content: flex-start; }
 
   footer .about {
     flex-flow: row;
