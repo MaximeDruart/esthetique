@@ -71,6 +71,17 @@ $border-radius:15px;
       transition: all 0.3s linear;
       li{
         padding: 10px 0;
+        position: relative;
+      }
+      li::after{
+        content:"";
+        position: absolute;
+        right:100%;
+        top:50%;
+        transform: translateY(-50%);
+        width:1px;
+        height:100%;
+        background-color: $color-text;
       }
     }
     ul.dropdown_active{
@@ -146,6 +157,7 @@ $border-radius:15px;
               font-weight: 400;
               font-size:20px;
               text-transform: uppercase;
+              margin-bottom:4px;
             }
           }
 
@@ -166,6 +178,7 @@ $border-radius:15px;
               font-weight: 400;
               font-size:20px;
               text-transform: uppercase;
+              margin-bottom:4px;
             }
           }
         }
