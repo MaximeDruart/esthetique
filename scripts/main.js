@@ -32,3 +32,8 @@ navDropdown.addEventListener('click', () => {
     navDropdown.classList.toggle("dropdown_active")
   }
 })
+
+let hamburger = document.querySelector('.hamburger')
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('is-active')
+})

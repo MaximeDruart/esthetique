@@ -36,16 +36,55 @@ $border-radius:15px;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.20);
     padding:20px 0px;
     background: $color-header;
-    h2{
-      font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    a{
+      text-decoration: none;
+      color:white !important;
       text-align: center;
-      a{
-        text-decoration: none;
+      h2{
+        font-size: 1.4em;
+        font-weight: 300;
+      }
+      p{
+        color: rgb(220,220,220);
+        margin:0;
         font-weight: 100;
-        color:white !important;
+        margin-top:5px;
       }
     }
-  } // Header
+
+    #hamburger-1.is-active .lineHam:nth-child(2){
+      opacity: 0;
+    }
+    #hamburger-1.is-active .lineHam:nth-child(1){
+      transform: translateY(6px) rotate(45deg);
+    }
+    #hamburger-1.is-active .lineHam:nth-child(3){
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .hamburger{
+      position: absolute;
+      right:7%;
+      top:50%;
+      transform: translateY(-50%);
+
+
+      .lineHam{
+        width: 40px;
+        height: 3px;
+        background-color: white;
+        border-radius: 12px;
+        display: block;
+        margin: 4px auto;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
   nav{
     margin : 60px 0px;
     display: flex;
@@ -88,16 +127,6 @@ $border-radius:15px;
           background-color: $color-btn-pink;
         }
       }
-      li:not(:last-child)::after{
-        content:"";
-        position: absolute;
-        left:100%;
-        top:50%;
-        transform: translateY(-50%);
-        width:1px;
-        height:100%;
-        background-color: lightgrey;
-      }
     }
     ul.dropdown_active{
       height:450px;
@@ -118,6 +147,7 @@ $border-radius:15px;
       overflow: hidden;
       filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.3));
       background-color:$color-service;
+      margin-bottom: 50px;
       .service-wrapper{
         height:50%;
         width:140%;
@@ -154,7 +184,7 @@ $border-radius:15px;
         }
         .service-infos{
           margin: 0 auto;
-          width: 60%;
+          width: 80%;
           height:30%;
           display: flex;
           flex-flow: row nowrap;
@@ -162,11 +192,13 @@ $border-radius:15px;
           align-items: center;
 
           .duration{
-            font-weight: 200;
             height:60%;
+            width: 45%;
             display: flex;
             flex-flow:column;
             justify-content: space-around;
+            align-items: center;
+            font-weight: 200;
 
             .head{
               font-weight: 400;
@@ -177,17 +209,19 @@ $border-radius:15px;
           }
 
           .line{
-            height:80%;
+            height:55%;
             width:1px;
             background-color:lightgrey;
           }
 
           .price{
-            font-weight: 200;
             height:60%;
+            width: 45%;
             display: flex;
             flex-flow:column;
             justify-content: space-around;
+            align-items: center;
+            font-weight: 200;
 
             .head{
               font-weight: 400;
@@ -199,7 +233,7 @@ $border-radius:15px;
         }
 
         .reserver{
-          height:20%;
+          height:16%;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -218,16 +252,47 @@ $border-radius:15px;
   }
   footer{
     margin-top: 5vh;
-    padding: 0 20px;
+    padding: 20px 40px;
     background-color:$color-footer;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     .about{
+      width: 100%;
+      padding: 10px 20px;
       display: flex;
       flex-flow:column;
+
+      h1{
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+      p, a{
+        padding: 0;
+        margin: 2px;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .contact{
+        display: flex;
+        flex-flow: column;
+      }
+      .contact, .horaires, .adresse{
+        margin-bottom: 15px;
+      }
     }
   }
 }
 
 @media (min-width:1200px) {
+  header{
+
+    .hamburger{
+      display: none;
+    }
+  }
   nav{
     h1{
       display: none;
@@ -240,11 +305,22 @@ $border-radius:15px;
     li{
       padding: 0 15px !important;
     }
+    li:not(:last-child)::after{
+      content:"";
+      position: absolute;
+      left:100%;
+      top:50%;
+      transform: translateY(-50%);
+      width:1px;
+      height:100%;
+      background-color: lightgrey;
+    }
   }
 
   #services-container{
     width: 80%;
     margin:0 auto;
+    // justify-content: flex-start;
   }
   footer{
     .about{
