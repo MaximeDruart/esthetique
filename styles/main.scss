@@ -222,7 +222,9 @@ $border-radius:15px;
     }
   }
   footer{
+    height: 20vh;
     margin-top: 5vh;
+    padding: 10px 20px;
     background-color:$color-footer;
     .about{
       padding: 10px 20px;
@@ -230,11 +232,18 @@ $border-radius:15px;
       flex-flow:column;
 
       h1{
+        font-weight: 500;
         margin-bottom: 15px;
+        font-size: 22px;
       }
-      p{
+      p, a{
         padding: 0;
-        margin: 0;
+        margin: 2px;
+        font-size: 14px;
+      }
+      .contact{
+        display: flex;
+        flex-flow: row;
       }
     }
   }
