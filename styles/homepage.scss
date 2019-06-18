@@ -1,10 +1,11 @@
-body{
+body {
   overflow-x: hidden;
 }
-.homepage{
-  .first-screen{
-    margin-top:3vh;
-    width:100%;
+
+.homepage {
+  .first-screen {
+    margin-top: 3vh;
+    width: 100%;
     height: 80vh;
     background-color: lightpink;
     display: flex;
@@ -12,74 +13,73 @@ body{
     justify-content: space-around;
     align-items: center;
 
-    .logo{
+    .logo {
       background-color: red;
-      width:40%;
-      height:80%;
+      width: 40%;
+      height: 80%;
     }
-    .desc{
-      width:40%;
+
+    .desc {
+      width: 40%;
     }
   }
 
-  .shop{
-    margin-top:3vh;
-    width:100%;
+  .shop {
+    margin-top: 3vh;
+    width: 100%;
     display: flex;
     flex-flow: column; // change on mobile
     align-items: center;
-    .shop-headline{
+
+    .shop-headline {
       position: relative;
       margin-bottom: 30px;
     }
 
-    .shop-headline::after{
+    .shop-headline::after {
       position: absolute;
-      top:150%;
-      left:50%;
+      top: 150%;
+      left: 50%;
       transform: translateX(-50%);
-      content:"";
-      width:120%;
-      height:2px;
+      content: "";
+      width: 120%;
+      height: 2px;
       background-color: grey;
     }
-    .shop-photos{
-      width:90%;
+
+    .shop-photos {
+      width: 90%;
       display: flex;
       flex-flow: row nowrap; // change on mobile
       padding: 20px;
       justify-content: space-between;
       align-items: center;
 
-      .shop-items{
-        width:20%; // change on mobile
-        height:150px; // change for items
+      .shop-items {
+        width: 20%; // change on mobile
+        height: 150px; // change for items
         background-color: red;
-        margin:10px;
+        margin: 10px;
       }
     }
   }
 }
-
-
 @media (max-width:400px) {
-  .homepage{
-
-    .first-screen{
+  .homepage {
+    .first-screen {
       flex-flow: column;
 
-      .logo{
-        width:80%;
+      .logo {
+        width: 80%;
       }
     }
 
-    .shop{
-
-      .shop-photos{
+    .shop {
+      .shop-photos {
         flex-flow: column;
 
-        .shop-items{
-          width:80%;
+        .shop-items {
+          width: 80%;
         }
       }
     }
