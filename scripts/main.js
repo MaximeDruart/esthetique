@@ -1,10 +1,19 @@
 // Default cat
-$("#services-container").load("include/corps.html");
+
+window.onload = function(){
+  $("#services-container").load("include/corps.html");
+  buttons[0].classList.add('active')
+}
 
 // Filter services
 let buttons = document.querySelectorAll('.link-no-deco')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
+    buttons.forEach(button =>{
+      button.classList.remove('active')
+    })
+    button.classList.add('active')
+
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
     TweenMax.to('#services-container', 0.4, {opacity:1})
