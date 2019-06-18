@@ -123,7 +123,7 @@
             line-height: 1.4; }
         #services-container .service figcaption .service-infos {
           margin: 0 auto;
-          width: 60%;
+          width: 80%;
           height: 30%;
           display: flex;
           flex-flow: row nowrap;
@@ -174,11 +174,16 @@
 
   footer {
     margin-top: 5vh;
-    padding: 0 20px;
     background-color: #E6DEDB; }
     footer .about {
+      padding: 10px 20px;
       display: flex;
-      flex-flow: column; } }
+      flex-flow: column; }
+      footer .about h1 {
+        margin-bottom: 15px; }
+      footer .about p {
+        padding: 0;
+        margin: 0; } }
 @media (min-width: 1200px) {
   nav h1 {
     display: none; }
@@ -191,8 +196,7 @@
 
   #services-container {
     width: 80%;
-    margin: 0 auto;
-    justify-content: flex-start; }
+    margin: 0 auto; }
 
   footer .about {
     flex-flow: row;
