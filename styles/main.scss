@@ -56,41 +56,14 @@ $border-radius:15px;
         margin-top:5px;
       }
     }
-
-    #hamburger-1.is-active .lineHam:nth-child(2){
-      opacity: 0;
-    }
-    #hamburger-1.is-active .lineHam:nth-child(1){
-      transform: translateY(6px) rotate(45deg);
-    }
-    #hamburger-1.is-active .lineHam:nth-child(3){
-      transform: translateY(-6px) rotate(-45deg);
-    }
-
-    .hamburger{
-      position: absolute;
-      right:7%;
-      top:50%;
-      transform: translateY(-50%);
-
-
-      .lineHam{
-        width: 40px;
-        height: 3px;
-        background-color: white;
-        border-radius: 12px;
-        display: block;
-        margin: 4px auto;
-        transition: all 0.3s ease-in-out;
-      }
-    }
   }
   nav{
-    margin : 60px 0px;
+    width: 80%;
+    margin:40px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     .logo{
       margin-right:50px;
     }
@@ -150,6 +123,29 @@ $border-radius:15px;
     ul.dropdown_active{
       height:450px;
       transition: all 0.3s linear;
+    }
+
+    #hamburger-1.is-active .lineHam:nth-child(2){
+      opacity: 0;
+    }
+    #hamburger-1.is-active .lineHam:nth-child(1){
+      transform: translateY(6px) rotate(45deg);
+    }
+    #hamburger-1.is-active .lineHam:nth-child(3){
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .hamburger{
+
+      .lineHam{
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        border-radius: 12px;
+        display: block;
+        margin: 4px auto;
+        transition: all 0.3s ease-in-out;
+      }
     }
   } // Nav
   #services-container{
@@ -307,12 +303,13 @@ $border-radius:15px;
 
 @media (min-width:1200px) {
   header{
-
+  }
+  nav{
+    width: 100%;
+    justify-content: center;
     .hamburger{
       display: none;
     }
-  }
-  nav{
     h1{
       display: none;
     }

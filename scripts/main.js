@@ -21,17 +21,17 @@ buttons.forEach((button) => {
 })
 
 // Dropdown
-let navTrigger = document.querySelector('#navTrigger')
-let navDropdown = document.querySelector('#navDropdown')
-let triggerStyle = getComputedStyle(navTrigger)
-navTrigger.addEventListener('click', () => {
-    navDropdown.classList.toggle("dropdown_active")
-})
-navDropdown.addEventListener('click', () => {
-  if (triggerStyle.display != "none") {
-    navDropdown.classList.toggle("dropdown_active")
-  }
-})
+// let navTrigger = document.querySelector('#navTrigger')
+// let navDropdown = document.querySelector('#navDropdown')
+// let triggerStyle = getComputedStyle(navTrigger)
+// navTrigger.addEventListener('click', () => {
+//     navDropdown.classList.toggle("dropdown_active")
+// })
+// navDropdown.addEventListener('click', () => {
+//   if (triggerStyle.display != "none") {
+//     navDropdown.classList.toggle("dropdown_active")
+//   }
+// })
 
 let hamburger = document.querySelector('.hamburger')
 hamburger.addEventListener('click', () => {
