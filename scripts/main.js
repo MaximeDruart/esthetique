@@ -11,6 +11,7 @@ window.onload = function(){
 let buttons = document.querySelectorAll('.desktop li a.link-no-deco')
 let buttonsMobile = document.querySelectorAll('.mobile li a.link-no-deco')
 let mobSection = document.querySelector('.mobileSection')
+let servContainer = document.querySelector('.container')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     buttons.forEach(button => {
@@ -22,7 +23,9 @@ buttons.forEach((button) => {
 
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
-    TweenMax.to('#services-container', 0.6, {opacity:1})
+    servContainer.onload = () => {
+      TweenMax.to('#services-container', 0.6, {opacity:1})
+    }
   })
   button.addEventListener('mouseover', () => {
     !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
