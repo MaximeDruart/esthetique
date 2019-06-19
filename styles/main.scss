@@ -51,6 +51,14 @@ $border-radius:15px;
       ul{
         overflow: visible;
         height:auto;
+        font-size: 30px;
+
+        li{
+
+          .active::after{
+            top:110%;
+          }
+        }
       }
     }
   }

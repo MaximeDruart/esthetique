@@ -33,7 +33,10 @@
       justify-content: center; }
       .overlay nav ul {
         overflow: visible;
-        height: auto; }
+        height: auto;
+        font-size: 30px; }
+        .overlay nav ul li .active::after {
+          top: 110%; }
 
   header {
     box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.2);

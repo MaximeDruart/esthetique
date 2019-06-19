@@ -3,10 +3,13 @@
 window.onload = function(){
   $("#services-container").load("include/corps.html");
   buttons[0].classList.add('active')
+  buttonsMobile[0].classList.add('active')
 }
 
+
 // Filter services
-let buttons = document.querySelectorAll('li a.link-no-deco')
+let buttons = document.querySelectorAll('.desktop li a.link-no-deco')
+let buttonsMobile = document.querySelectorAll('.mobile li a.link-no-deco')
 let mobSection = document.querySelector('.mobileSection')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
@@ -21,20 +24,33 @@ buttons.forEach((button) => {
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
     TweenMax.to('#services-container', 0.6, {opacity:1})
   })
+  button.addEventListener('mouseover', () => {
+    !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
+  })
+  button.addEventListener('mouseout', () => {
+    !button.classList.contains('active') ? button.style.fontWeight = "200" : ""
+  })
 })
+buttonsMobile.forEach((button) => {
+  button.addEventListener('click', () => {
+    buttonsMobile.forEach(button => {
+      button.classList.remove('active')
+    })
+    button.classList.add('active')
+    mobSection.innerText = button.innerText
+    overlay.style.display == "block" ? (tlOverlay.reverse(), hamburger.classList.toggle('is-active')) : ""
 
-// Dropdown
-// let navTrigger = document.querySelector('#navTrigger')
-// let navDropdown = document.querySelector('#navDropdown')
-// let triggerStyle = getComputedStyle(navTrigger)
-// navTrigger.addEventListener('click', () => {
-//     navDropdown.classList.toggle("dropdown_active")
-// })
-// navDropdown.addEventListener('click', () => {
-//   if (triggerStyle.display != "none") {
-//     navDropdown.classList.toggle("dropdown_active")
-//   }
-// })
+    TweenMax.set('#services-container', {opacity:0})
+    $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
+    TweenMax.to('#services-container', 0.6, {opacity:1})
+  })
+  button.addEventListener('mouseover', () => {
+    !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
+  })
+  button.addEventListener('mouseout', () => {
+    !button.classList.contains('active') ? button.style.fontWeight = "200" : ""
+  })
+})
 
 
 let overlay = document.querySelector('.overlay')
