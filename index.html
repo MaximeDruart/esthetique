@@ -2,61 +2,94 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Services-Showroom Relooking</title>
-    <meta name="description" content="Showroom relooking - services">
+    <title>Showroom Relooking</title>
+    <meta name="description" content="Showroom relooking">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="https://kit.fontawesome.com/c7a72854dc.js"></script>
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="overlay">
-      <nav class="overlayNav">
-        <ul class="mobile" id="navDropdown">
-          <li><a class="link-no-deco" href="#" data-service="corps">Corps</a></li>
-          <li><a class="link-no-deco" href="#" data-service="visage">Visage</a></li>
-          <li><a class="link-no-deco" href="#" data-service="minceur">Minceur</a></li>
-          <li><a class="link-no-deco" href="#" data-service="epilation">Épilation</a></li>
-          <li><a class="link-no-deco" href="#" data-service="maquillage">Maquillage</a></li>
-          <li><a class="link-no-deco" href="#" data-service="vernis">Vernis</a></li>
-          <li><a class="link-no-deco" href="#" data-service="coiffure">Coiffure</a></li>
-          <li><a class="link-no-deco" href="#" data-service="cils">Cils</a></li>
-          <li><a class="link-no-deco" href="#" data-service="mariee">Mariée</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="logo">
+        <a class="logo-nav link-no-deco" href="index.html">
+          <h2>Showroom</h2>
+          <p>Relooking .Ms</p>
+        </a>
+      </div>
+      <div class="headElements">
+        <div class="hEl header-service">SERVICES</div>
+        <div class="hEl header-boutique">NOTRE SALON</div>
+      </div>
+    </nav>
 
-    <main>
-      <nav>
+
+    <main class="homepage">
+      <div class="first-screen">
+        <div class="desc">
+          <h1 class="fp-headline">Bienvenue chez</h1>
+          <h1 class="fp-headline">Relooking Ms</h1>
+          <p class="fp-body">Le Showroom Relooking MS est un salon de beauté et de bien-être. Nous proposons massages, coiffure, manucure et bien plus encore.</p>
+          <span class="fp-discover"><a href="services.html">Découvrir nos soins</a></span>
+        </div>
         <div class="logo">
-          <a class="logo-nav link-no-deco" href="index.html">
-            <h2>Showroom</h2>
-            <p>Relooking .Ms</p>
-          </a>
+          <!-- <img src="images/homepage.jpeg" alt="flowers"> -->
         </div>
-        <!-- <h1 id="navTrigger"><i class="fas fa-chevron-down"></i> Nos Services</h1> -->
-        <ul class="desktop" id="navDropdown">
-          <li><a class="link-no-deco" href="#" data-service="corps">Corps</a></li>
-          <li><a class="link-no-deco" href="#" data-service="visage">Visage</a></li>
-          <li><a class="link-no-deco" href="#" data-service="minceur">Minceur</a></li>
-          <li><a class="link-no-deco" href="#" data-service="epilation">Épilation</a></li>
-          <li><a class="link-no-deco" href="#" data-service="maquillage">Maquillage</a></li>
-          <li><a class="link-no-deco" href="#" data-service="vernis">Vernis</a></li>
-          <li><a class="link-no-deco" href="#" data-service="coiffure">Coiffure</a></li>
-          <li><a class="link-no-deco" href="#" data-service="cils">Cils</a></li>
-          <li><a class="link-no-deco" href="#" data-service="mariee">Mariée</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger-1">
-          <span class="lineHam"></span>
-          <span class="lineHam"></span>
-          <span class="lineHam"></span>
+      </div>
+      <div class="main-services">
+        <div class="head-wrapper">
+          <span class="Shead headline">Soins principaux</span>
         </div>
-      </nav>
-      <div class="mobileSection">CORPS</div>
-      <section id="services-container">
-      </section>
+        <div class="services-container">
+          <div class="service-item body">
+            <div class="headline">corps</div>
+            <div class="desc">
+              Dans cette catégorie vous pouvez trouver différents types de massage et soin.
+            </div>
+            <div class="photo">
+              <img src="images/services-corps.jpg" alt="service-corps">
+            </div>
+          </div>
+          <div class="service-item face">
+            <div class="headline">visage</div>
+            <div class="desc">
+              La catégorie visage regroupe des prestations de soins du visage, et blanchiment dentaire.
+            </div>
+            <div class="photo">
+              <img src="images/services-visage.jpg" alt="service-visage">
+            </div>
+          </div>
+          <div class="service-item polish">
+            <div class="headline">manucure</div>
+            <div class="desc">
+              Cette catégorie regroupe plusieurs prestations comme la pause de vernis semi permanent.
+            </div>
+            <div class="photo">
+              <img src="images/services-manucure.jpg" alt="service-manucure">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop">
+        <h1 class="shop-headline">Notre Boutique</h1>
+        <div class="shop-photos">
+          <!-- set up les images -->
+          <div class="shop-items">
+            <img src="" alt="">
+          </div>
+          <div class="shop-items">
+            <img src="" alt="">
+          </div>
+          <div class="shop-items">
+            <img src="" alt="">
+          </div>
+          <div class="shop-items">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -87,6 +120,6 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" charset="utf-8"></script>
-    <script src="scripts/main.js" charset="utf-8"></script>
+    <script src="scripts/homepage.js" charset="utf-8"></script>
   </body>
 </html>
