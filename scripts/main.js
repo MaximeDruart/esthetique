@@ -7,13 +7,16 @@ window.onload = function(){
 
 // Filter services
 let buttons = document.querySelectorAll('li a.link-no-deco')
+let mobSection = document.querySelector('.mobileSection')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     buttons.forEach(button => {
       button.classList.remove('active')
     })
     button.classList.add('active')
+    mobSection.innerText = button.innerText
     overlay.style.display == "block" ? (tlOverlay.reverse(), hamburger.classList.toggle('is-active')) : ""
+
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
     TweenMax.to('#services-container', 0.6, {opacity:1})
