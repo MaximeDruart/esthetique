@@ -59,6 +59,7 @@ let hamburger = document.querySelector('.hamburger')
 let tlOverlay = new TimelineMax({paused:true})
 tlOverlay.set(overlay, {display:"block"})
 tlOverlay.to(overlay, 0.3, {ease:"easeInOut", opacity:1})
+tlOverlay.from(buttonsMobile, 0.6, {ease:"easeInOut", opacity:0})
 hamburger.addEventListener('click', (e) => {
   hamburger.classList.toggle('is-active')
   hamburger.classList.contains('is-active') ? tlOverlay.play() : tlOverlay.reverse()
