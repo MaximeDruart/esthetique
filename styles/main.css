@@ -130,11 +130,12 @@
         transition: all 0.3s ease-in-out; }
 
   .mobileSection {
-    width: 80%;
+    width: 66%;
     margin: 0 auto;
     font-weight: 400;
     position: relative;
-    color: black; }
+    color: black;
+    margin-bottom: 35px; }
 
   .mobileSection::after {
     content: "";
