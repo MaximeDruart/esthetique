@@ -64,6 +64,3 @@ hamburger.addEventListener('click', (e) => {
   hamburger.classList.toggle('is-active')
   hamburger.classList.contains('is-active') ? tlOverlay.play() : tlOverlay.reverse()
 })
-
-window.addEventListener('click', function(){
-})
