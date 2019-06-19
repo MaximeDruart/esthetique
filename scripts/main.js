@@ -11,6 +11,7 @@ window.onload = function(){
 let buttons = document.querySelectorAll('.desktop li a.link-no-deco')
 let buttonsMobile = document.querySelectorAll('.mobile li a.link-no-deco')
 let mobSection = document.querySelector('.mobileSection')
+let servContainer = document.querySelector('.container')
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     buttons.forEach(button => {
