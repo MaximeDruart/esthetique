@@ -12,6 +12,9 @@ nav {
     nav .headElements .hEl {
       padding: 10px;
       font-weight: 300; }
+      nav .headElements .hEl a {
+        text-decoration: none;
+        color: black; }
     nav .headElements .header-service {
       position: relative; }
     nav .headElements .header-service::after {
