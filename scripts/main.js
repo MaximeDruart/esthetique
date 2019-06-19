@@ -23,7 +23,9 @@ buttons.forEach((button) => {
 
     TweenMax.set('#services-container', {opacity:0})
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
-    TweenMax.to('#services-container', 0.6, {opacity:1})
+    servContainer.onload = () => {
+      TweenMax.to('#services-container', 0.6, {opacity:1})
+    }
   })
   button.addEventListener('mouseover', () => {
     !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
