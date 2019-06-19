@@ -32,8 +32,9 @@ nav {
   justify-content: space-between;
   align-items: center; }
   .homepage .first-screen .desc {
+    opacity: 0;
     width: 25%;
-    transform: translateX(15vw);
+    transform: translateX(10vw);
     z-index: 10; }
     .homepage .first-screen .desc .fp-headline {
       font-size: 50px;
@@ -136,7 +137,7 @@ nav {
     height: 2px;
     background-color: grey; }
   .homepage .shop .shop-photos {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-flow: row nowrap;
     padding: 20px;

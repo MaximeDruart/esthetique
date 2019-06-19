@@ -50,8 +50,9 @@ nav{
     align-items: center;
 
     .desc {
+      opacity: 0;
       width: 25%;
-      transform: translateX(15vw);
+      transform: translateX(10vw);
       z-index: 10;
 
       .fp-headline{
@@ -194,7 +195,7 @@ nav{
     }
 
     .shop-photos {
-      width: 90%;
+      width: 80%;
       display: flex;
       flex-flow: row nowrap; // change on mobile
       padding: 20px;

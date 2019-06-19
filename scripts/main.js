@@ -25,12 +25,12 @@ buttons.forEach((button) => {
     $("#services-container").load("include/"+button.getAttribute('data-service')+".html");
     TweenMax.to('#services-container', 0.6, {opacity:1})
   })
-  button.addEventListener('mouseover', () => {
-    !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
-  })
-  button.addEventListener('mouseout', () => {
-    !button.classList.contains('active') ? button.style.fontWeight = "200" : ""
-  })
+  // button.addEventListener('mouseover', () => {
+  //   !button.classList.contains('active') ? button.style.fontWeight = "300" : ""
+  // })
+  // button.addEventListener('mouseout', () => {
+  //   !button.classList.contains('active') ? button.style.fontWeight = "200" : ""
+  // })
 })
 buttonsMobile.forEach((button) => {
   button.addEventListener('click', () => {
