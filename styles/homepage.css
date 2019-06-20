@@ -145,12 +145,12 @@ nav {
   .homepage .shop .shop-photos {
     width: 80%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     padding: 20px;
     justify-content: space-between;
     align-items: center; }
     .homepage .shop .shop-photos .shop-items {
-      width: 20%;
+      width: 300px;
       height: 150px;
       margin: 10px;
       background: grey; }

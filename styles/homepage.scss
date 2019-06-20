@@ -207,13 +207,13 @@ nav{
     .shop-photos {
       width: 80%;
       display: flex;
-      flex-flow: row nowrap; // change on mobile
+      flex-flow: row wrap; // change on mobile
       padding: 20px;
       justify-content: space-between;
       align-items: center;
 
       .shop-items {
-        width: 20%; // change on mobile
+        width: 300px; // change on mobile
         height: 150px; // change for items
         margin: 10px;
         background: grey;
