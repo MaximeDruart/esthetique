@@ -76,7 +76,8 @@ nav {
   .homepage .main-services .head-wrapper {
     width: 70%;
     margin: 0 auto;
-    margin-bottom: 10vh; }
+    margin-bottom: 10vh;
+    text-align: center; }
     .homepage .main-services .head-wrapper .headline {
       position: relative;
       font-size: 40px;
