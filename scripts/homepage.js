@@ -11,4 +11,6 @@ photos.forEach((photo) => {
 })
 
 
-window.onload = () => {TweenMax.to('.first-screen .desc', 0.6, {opacity:1, ease:"easeInOut", x:"15vw"})}
+window.onload = () => {
+  TweenMax.to('.first-screen .desc', 0.6, {opacity:1, ease:"easeInOut", x:"15vw"})
+}

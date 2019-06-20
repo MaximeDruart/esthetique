@@ -6,7 +6,6 @@ window.onload = function(){
   buttonsMobile[0].classList.add('active')
 }
 
-
 // Filter services
 let buttons = document.querySelectorAll('.desktop li a.link-no-deco')
 let buttonsMobile = document.querySelectorAll('.mobile li a.link-no-deco')
@@ -53,7 +52,7 @@ buttonsMobile.forEach((button) => {
   })
 })
 
-
+// mobile menu animation
 let overlay = document.querySelector('.overlay')
 let hamburger = document.querySelector('.hamburger')
 let tlOverlay = new TimelineMax({paused:true})
