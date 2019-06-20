@@ -63,3 +63,10 @@ hamburger.addEventListener('click', (e) => {
   hamburger.classList.toggle('is-active')
   hamburger.classList.contains('is-active') ? tlOverlay.play() : tlOverlay.reverse()
 })
+
+let scrollTop = document.querySelector('.scrollToTop')
+
+scrollTop.addEventListener('click', () => {
+  let scroll = new SmoothScroll()
+  scroll.animateScroll(0)
+})
