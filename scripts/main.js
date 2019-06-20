@@ -69,9 +69,9 @@ let lastScroll = 0
 window.addEventListener('scroll', (event) => {
   let currentScroll = scrollY
   if (currentScroll>lastScroll) {
-    TweenMax.to(scrollTopDom, 0.3, {opacity:1})
-  } else {
     TweenMax.to(scrollTopDom, 0.3, {opacity:0})
+  } else {
+    TweenMax.to(scrollTopDom, 0.3, {opacity:1})
   }
   lastScroll = currentScroll
 })
