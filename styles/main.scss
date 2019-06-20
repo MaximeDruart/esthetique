@@ -33,6 +33,7 @@ $border-radius:15px;
 // Mobile stylesheet
 @media (min-width: 300px) {
   .scrollToTop{
+    z-index: 100;
     font-size: 18px;
     color: white;
     padding: 20px;
