@@ -55,15 +55,16 @@ nav {
       .homepage .first-screen .desc .fp-discover a {
         color: black;
         text-decoration: none; }
-    .homepage .first-screen .desc .fp-discover::after {
+    .homepage .first-screen .desc .fp-discover-before, .homepage .first-screen .desc .fp-discover-after {
       position: absolute;
-      content: "";
       height: 1px;
       width: 100%;
       top: 50%;
       transform: translateY(-50%);
       left: 110%;
       background-color: black; }
+    .homepage .first-screen .desc .fp-discover-after {
+      left: -50%; }
   .homepage .first-screen .logo {
     width: 70%;
     height: 75%;

@@ -83,15 +83,17 @@ nav{
           text-decoration: none;
         }
       }
-      .fp-discover::after{
+      .fp-discover-before, .fp-discover-after{
         position: absolute;
-        content:"";
         height: 1px;
         width: 100%;
         top:50%;
         transform: translateY(-50%);
         left:110%;
         background-color: black;
+      }
+      .fp-discover-after{
+        left:-50%;
       }
     }
 
