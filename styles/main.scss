@@ -10,7 +10,7 @@ $color-text: #262626;
 $color-service:#ffffff;
 $color-btn:#ffc0cb;
 $color-btn-light:#ffffff;
-$color-footer:#413936;
+$color-footer:#ffffff;
 $color-btn-pink:#fa9d9d;
 
 $border-radius:15px;
@@ -324,6 +324,7 @@ $border-radius:15px;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.2));
     .about{
       width: 100%;
       padding: 10px 20px;
@@ -331,14 +332,12 @@ $border-radius:15px;
       flex-flow:column;
 
       h1{
-        color:white;
         font-weight: 400;
         margin-bottom: 15px;
         font-size: 22px;
       }
       p, a{
         padding: 0;
-        color:white;
         margin: 2px;
         font-weight: 200;
         font-size: 14px;
