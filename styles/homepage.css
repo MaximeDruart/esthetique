@@ -152,7 +152,10 @@ nav {
       width: 20vw;
       height: 600px;
       margin: 10px;
-      background: grey; }
+      background: grey;
+      overflow: hidden; }
+      .homepage .shop .shop-photos .shop-items img {
+        height: 100%; }
 
 @media (max-width: 600px) {
   nav {
@@ -191,7 +194,7 @@ nav {
         .homepage .first-screen .desc .fp-discover a {
           color: white !important;
           font-weight: 300; }
-      .homepage .first-screen .desc .fp-discover::after {
+      .homepage .first-screen .desc .fp-discover-after {
         width: 0; }
     .homepage .first-screen .logo {
       width: 100%;
@@ -204,6 +207,7 @@ nav {
     flex-flow: column; }
     .homepage .shop .shop-photos .shop-items {
       width: 80%;
+      height: 450px;
       margin-bottom: 3vh; }
 
   .face, .polish {
@@ -222,6 +226,8 @@ nav {
       position: absolute;
       width: 50%;
       left: 0; }
+  .homepage .shop .shop-photos .shop-items {
+    height: 400px; }
 
   .face, .polish {
     transform: translateY(0) !important; } }

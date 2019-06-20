@@ -216,6 +216,11 @@ nav{
         height: 600px; // change for items
         margin: 10px;
         background: grey;
+        overflow: hidden;
+
+        img{
+          height: 100%;
+        }
       }
     }
   }
@@ -267,7 +272,7 @@ nav{
             font-weight: 300;
           }
         }
-        .fp-discover::after{
+        .fp-discover-after{
           width: 0;
         }
       }
@@ -289,6 +294,7 @@ nav{
 
         .shop-items {
           width: 80%;
+          height: 450px;
           margin-bottom: 3vh;
         }
       }
@@ -317,6 +323,14 @@ nav{
         position: absolute;
         width: 50%;
         left: 0;
+      }
+    }
+    .shop {
+      .shop-photos {
+
+        .shop-items {
+          height: 400px;
+        }
       }
     }
   }
