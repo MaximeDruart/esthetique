@@ -66,7 +66,7 @@ hamburger.addEventListener('click', (e) => {
 
 let lastScroll = 0
 
-window.addEventListener('scroll',, (event) => {
+window.addEventListener('scroll', (event) => {
   let currentScroll = scrollY
   if (currentScroll>lastScroll) {
     TweenMax.to(scrollTopDom, 0.3, {opacity:1})

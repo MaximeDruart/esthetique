@@ -33,6 +33,7 @@ $border-radius:15px;
 // Mobile stylesheet
 @media (min-width: 300px) {
   .scrollToTop{
+    opacity: 0;
     z-index: 100;
     font-size: 18px;
     color: white;
@@ -354,7 +355,8 @@ $border-radius:15px;
 
 
 @media (min-width:1200px) {
-  header{
+  .scrollToTop{
+    display: none;
   }
   nav{
     width: 100%;
