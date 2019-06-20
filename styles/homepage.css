@@ -99,7 +99,7 @@ nav {
     justify-content: space-around;
     align-items: center; }
     .homepage .main-services .services-container .service-item {
-      width: 380px;
+      width: 300px;
       height: 80vh;
       margin-bottom: 7vh; }
       .homepage .main-services .services-container .service-item .headline {
@@ -118,6 +118,8 @@ nav {
         height: 75%;
         width: 100%;
         border-radius: 25px; }
+        .homepage .main-services .services-container .service-item .photo img {
+          width: 100%; }
     .homepage .main-services .services-container .face {
       transform: translateY(15vh); }
     .homepage .main-services .services-container .polish {
