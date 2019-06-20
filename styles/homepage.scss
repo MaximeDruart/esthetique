@@ -166,7 +166,7 @@ nav{
           border-radius: 25px;
 
           img{
-            width: 100%;
+            width: 150%;
           }
         }
       }
@@ -213,8 +213,8 @@ nav{
       align-items: center;
 
       .shop-items {
-        width: 300px; // change on mobile
-        height: 150px; // change for items
+        width: 20vw; // change on mobile
+        height: 600px; // change for items
         margin: 10px;
         background: grey;
       }
@@ -284,15 +284,17 @@ nav{
         margin-bottom: 5vh;
       }
     }
-  }
-  .shop {
-    .shop-photos {
-      flex-flow: column;
+    .shop {
+      .shop-photos {
+        flex-flow: column;
 
-      .shop-items {
-        width: 80%;
+        .shop-items {
+          width: 80%;
+          margin-bottom: 3vh;
+        }
       }
-    }
+  }
+
   }
   .face, .polish{
     transform: translateY(0) !important;

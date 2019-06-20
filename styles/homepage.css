@@ -119,7 +119,7 @@ nav {
         width: 100%;
         border-radius: 25px; }
         .homepage .main-services .services-container .service-item .photo img {
-          width: 100%; }
+          width: 150%; }
     .homepage .main-services .services-container .face {
       transform: translateY(15vh); }
     .homepage .main-services .services-container .polish {
@@ -150,8 +150,8 @@ nav {
     justify-content: space-between;
     align-items: center; }
     .homepage .shop .shop-photos .shop-items {
-      width: 300px;
-      height: 150px;
+      width: 20vw;
+      height: 600px;
       margin: 10px;
       background: grey; }
 
@@ -201,11 +201,11 @@ nav {
   .homepage .main-services .head-wrapper {
     text-align: center;
     margin-bottom: 5vh; }
-
-  .shop .shop-photos {
+  .homepage .shop .shop-photos {
     flex-flow: column; }
-    .shop .shop-photos .shop-items {
-      width: 80%; }
+    .homepage .shop .shop-photos .shop-items {
+      width: 80%;
+      margin-bottom: 3vh; }
 
   .face, .polish {
     transform: translateY(0) !important; }
