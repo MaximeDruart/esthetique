@@ -4,7 +4,7 @@ let url = window.location.href
 let urlTag = url.substring(url.lastIndexOf("#")+1)
 
 window.onload = function(){
-  if (urlTag != 1) {
+  if (urlTag != -1) {
     $("#services-container").load("include/"+ urlTag +".html");
   } else {
     $("#services-container").load("include/corps.html");
