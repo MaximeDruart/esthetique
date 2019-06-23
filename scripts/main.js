@@ -4,11 +4,19 @@ let url = window.location.href
 let urlTag = url.substring(url.lastIndexOf("#")+1)
 
 window.onload = function(){
-  $("#services-container").load("include/"+ urlTag +".html");
+  if (urlTag != 1) {
+    $("#services-container").load("include/"+ urlTag +".html");
+  } else {
+    $("#services-container").load("include/corps.html");
+  }
   buttons.forEach((button) => {
     if (button.getAttribute('data-service') == urlTag) {
-      buttons[0].classList.add('active')
-      buttonsMobile[0].classList.add('active')
+      button.classList.add('active')
+    }
+  })
+  buttonsMobile.forEach((buttonMob) => {
+    if (buttonMob.getAttribute('data-service') == urlTag) {
+      buttonMob.classList.add('active')
     }
   })
 }
