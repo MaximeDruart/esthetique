@@ -4,7 +4,7 @@ let url = window.location.href
 let urlTag = url.substring(url.lastIndexOf("#")+1)
 
 window.onload = function(){
-  if (urlTag != -1) {
+  if (url.lastIndexOf("#") != -1) {
     $("#services-container").load("include/"+ urlTag +".html");
     buttons.forEach((button) => {
       if (button.getAttribute('data-service') == urlTag) {
