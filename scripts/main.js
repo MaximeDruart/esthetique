@@ -6,19 +6,22 @@ let urlTag = url.substring(url.lastIndexOf("#")+1)
 window.onload = function(){
   if (urlTag != -1) {
     $("#services-container").load("include/"+ urlTag +".html");
+    buttons.forEach((button) => {
+      if (button.getAttribute('data-service') == urlTag) {
+        button.classList.add('active')
+      }
+    })
+    buttonsMobile.forEach((buttonMob) => {
+      if (buttonMob.getAttribute('data-service') == urlTag) {
+        buttonMob.classList.add('active')
+      }
+    })
   } else {
     $("#services-container").load("include/corps.html");
+    buttons[0].classList.add('active')
+    buttonsMobile[0].classList.add('active')
   }
-  buttons.forEach((button) => {
-    if (button.getAttribute('data-service') == urlTag) {
-      button.classList.add('active')
-    }
-  })
-  buttonsMobile.forEach((buttonMob) => {
-    if (buttonMob.getAttribute('data-service') == urlTag) {
-      buttonMob.classList.add('active')
-    }
-  })
+
 }
 
 // Filter services
