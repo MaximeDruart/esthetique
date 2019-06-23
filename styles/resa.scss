@@ -29,7 +29,7 @@ main{
       fieldset{
         border:none;
 
-        input, textarea{
+        input, textarea, select{
           padding: 20px;
           margin: 5px;
           border-radius: 10px;
@@ -37,7 +37,11 @@ main{
           height: 30px;
           width: 100%;
           background-color: #F2F1F0;
+        }
 
+        select{
+          padding: 5px;
+          height: 40px;
         }
 
         textarea{

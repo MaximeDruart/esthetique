@@ -22,7 +22,7 @@ main {
         font-weight: 300; }
       main .form-container form fieldset {
         border: none; }
-        main .form-container form fieldset input, main .form-container form fieldset textarea {
+        main .form-container form fieldset input, main .form-container form fieldset textarea, main .form-container form fieldset select {
           padding: 20px;
           margin: 5px;
           border-radius: 10px;
@@ -30,6 +30,9 @@ main {
           height: 30px;
           width: 100%;
           background-color: #F2F1F0; }
+        main .form-container form fieldset select {
+          padding: 5px;
+          height: 40px; }
         main .form-container form fieldset textarea {
           height: 100px; }
         main .form-container form fieldset button {

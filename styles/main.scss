@@ -46,6 +46,10 @@ $border-radius:15px;
     background-color: $color-btn-pink;
     bottom: 50px;
     right: 50px;
+    transition: all 0.4s ease-in-out; 
+  }
+  .scrollToTop.active{
+    opacity: 1;
   }
   .overlay{
     display: none;

@@ -64,20 +64,15 @@ hamburger.addEventListener('click', (e) => {
   hamburger.classList.contains('is-active') ? tlOverlay.play() : tlOverlay.reverse()
 })
 
-let lastScroll = 0
-
-window.addEventListener('scroll', (event) => {
-  let currentScroll = scrollY
-  if (currentScroll>lastScroll) {
-    TweenMax.to(scrollTopDom, 0.3, {opacity:0})
-  } else {
-    TweenMax.to(scrollTopDom, 0.3, {opacity:1})
-  }
-  lastScroll = currentScroll
-})
 
 let scrollTopDom = document.querySelector('.scrollToTop')
 scrollTopDom.addEventListener('click', () => {
   let scroll = new SmoothScroll()
   scroll.animateScroll(0)
+})
+
+window.addEventListener('scroll', (event) => {
+  scrollY > (window.innerHeight)*0.5
+  ? scrollTopDom.classList.add('active')
+  : scrollTopDom.classList.remove('active')
 })
