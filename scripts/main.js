@@ -1,7 +1,10 @@
 // Default cat
 
+let url = window.location.href
+let urlTag = url.substring(url.lastIndexOf("#")+1)
+
 window.onload = function(){
-  $("#services-container").load("include/corps.html");
+  $("#services-container").load("include/"+ urlTag +".html");
   buttons[0].classList.add('active')
   buttonsMobile[0].classList.add('active')
 }
